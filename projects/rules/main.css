@@ -1,0 +1,53 @@
+@import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+/*General tags*/
+* {
+  color: #bbb;
+  font-family: Roboto;
+}
+*:focus {
+  outline: none;
+}
+html {
+  background: #333;
+}
+h1 {
+  text-align: center;
+}
+h1, h2, h3 {
+  font-family: 'Open Sans';
+}
+
+/*Structure*/
+article {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+main {
+  margin: 2em 0;
+}
+
+/*General tags (by alphabetic order)*/
+#suggest {
+  width: 300px;
+  margin: 0 auto;
+}
+  #suggest input {
+    width: 100%;
+    line-height: 40px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #bbb;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  #suggest input:focus {
+    background-color: #ccc;
+  }
+  #suggest input[type='submit'] {
+    background-color: #888;
+    border-radius: 0 0 10px 10px;
+  }

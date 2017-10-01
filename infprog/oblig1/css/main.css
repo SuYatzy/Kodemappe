@@ -1,0 +1,106 @@
+* {
+  font-family: 'Helvetica Neue', 'Calibri', 'Sans Serif';
+  color: #aaa;
+}
+*:focus {
+  outline: none;
+}
+html {
+  background: #222;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+}
+a {
+  color: #1dd686;
+  text-decoration: none;
+}
+
+header {
+  background: #1dd686;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  padding-left: 20px;
+}
+header h1 {
+  color: #222;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 1em 2em;
+  position: absolute;
+  top: 100px;
+  width: calc(100% - 4em);
+}
+
+article h2 {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-left: 5px;
+  box-shadow: -20px 0 0 0 #aaa;
+  letter-spacing: 1px;
+}
+
+article p{
+  font-size: 18px;
+}
+
+article button {
+  font-size: 15px;
+  background: #1dd686;
+  color: #222;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  min-width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+article button:hover {
+  filter: opacity(0.7);
+}
+
+article input {
+  font-size: 18px;
+  background: white;
+  color: #222;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.longBoy {
+  width: 180px;
+
+}
+
+canvas {
+
+}
+@media only screen and (max-device-width: 50em) {
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  background: #1dd686;
+}
+#canvasArt {
+  background-color: black;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>19. September</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript">
+      window.onload = boot;
+      var ctx;
+      var x = 400;
+      var y = 400;
+      var direction = 0;
+
+      var ctx2;
+      var antX = 400;
+      var antY = 400;
+      var antDirection = 0;
+
+      function boot() {
+        randomColor();
+        document.getElementById('btnInsertNum').onclick = insert;
+        draw();
+        ctxAnt = document.getElementById('canvas2').getContext("2d");
+        ctxAnt.fillStyle = 'blue';
+        ctxAnt.rect(0,600,1000,600);
+        ctxAnt.fill();
+        ant();
+      }
+      function randomColor() {
+        var num = Math.random()
+        if(num > .33 && num < .66) {
+          document.getElementById('txt').style.color = "red"
+        } else if (num > .66) {
+          document.getElementById('txt').style.color = "lightblue"
+        } else {
+          document.getElementById('txt').style.color = "lightgreen"
+        }
+        setTimeout(randomColor, 100)
+      }
+      function insert() {
+        var num2 = parseInt(document.getElementById('txtNum'));
+        if((num2 % 2) === 0) {
+          document.getElementById('txt2').style.color = "red"
+        } else if ((num2 % 2) === 1) {
+          document.getElementById('txt2').style.color = "lightblue"
+        }
+      }
+      function draw() {
+        ctx = document.getElementById('canvas').getContext("2d");
+        ctx.fillStyle = 'black';
+        ctx.strokeStyle= 'green';
+        ctx.globalAlpha = '.01';
+        ctx.lineWidth = 10;
+        ctx.rect(x, y, 10, 10);
+        ctx.stroke();
+        ctx.fill();
+
+        /*
+        ctx.fillStyle = 'white';
+        ctx.globalAlpha ='.01';
+        ctx.rect(0, 0, 1000, 600);
+        ctx.fill();
+        */
+
+        if (direction === 0) {
+          y -= 5;
+        } else if (direction === 1) {
+          x += 5;
+        } else if (direction === 2) {
+          y += 5;
+        } else if (direction === 3) {
+          x -= 5;
+        }
+        if(Math.random() < .05) {
+          direction++;
+        }
+        if(Math.random() < .05) {
+          direction--;
+        }
+        if (direction > 3) {
+          direction = 0;
+        }
+        if (direction < 0) {
+          direction = 3;
+        }
+        if (x < 0) {
+          direction = 1;
+        }
+        if (x > 990) {
+          direction = 3;
+        }
+        if (y < 0) {
+          direction = 2;
+        }
+        if (y > 590) {
+          direction = 0;
+        }
+        setTimeout(draw, 0)
+      }
+      function ant() {
+
+        if (antDirection === 0) {
+          y -= 5;
+        } else if (antDirection === 1) {
+          x += 5;
+        } else if (antDirection === 2) {
+          y += 5;
+        } else if (antDirection === 3) {
+          x -= 5;
+        }
+
+        ctx2 = document.getElementById('canvas').getContext("2d");
+
+        var c = ctx2.getImageData(x,y,10,10);
+
+        if (c[0] === 255) {
+          ctx2.beginPath();
+          ctx2.rect(antX,antY,10,10);
+          ctx2.fillStyle = "black";
+          ctx2.fill();
+
+          antDirection++;
+
+          if (antDirection > 3) {
+            antDirection = 0;
+          }
+        } else if (c[1] === 255) {
+          ctx2.beginPath
+          ctx2.rect(antX,antY,10,10);
+          ctx2.fillStyle = "white";
+          ctx2.fill();
+
+          antDirection--;
+
+          if (antDirection > 3) {
+            antDirection = 0;
+          }
+        }
+        setTimeout(ant, 100);
+      }
+    </script>
+  </head>
+  <body>
+    <p id="txt">placeholder</p>
+    <input type="number" id="txtNum" value="5" />
+    <button type="button" id="btnInsertNum">Insert</button>
+    <p id="txt2"> placeholder</p>
+    <canvas id="canvas" width="1000" height="600"></canvas>
+    <canvas id="canvas2" width="1000" height="600"></canvas>
+    <a href="2.html">neste</a>
+  </body>
+</html>

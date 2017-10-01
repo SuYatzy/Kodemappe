@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    function math(operator) {
+      var num1 = parseFloat(document.getElementById("inptNum1").value.replace("," , "."));
+      var num2 = parseFloat(document.getElementById("inptNum2").value.replace("," , "."));
+
+      if (operator === "add") {
+        var total = num1 + num2;
+      } else if (operator === "min") {
+        var total = num1 - num2;
+      }
+
+      document.getElementById("outputMath").innerHTML = total;
+    }
+    </script>
+  </head>
+  <body>
+    <p>
+      Sett inn to nummer så vil nettsiden på magisk vis utføre en matematisk operasjon på de. <br />
+      <input id="inptNum1" type="number"> </input>
+      <input id="inptNum2" type="number"> </input> =
+      <output id="outputMath">0</output> <br />
+      <button onclick="math('add')">+</button>
+      <button onclick="math('sub')">–</button>
+      <button onclick="math('multi')">&#x2022;</button>
+      <button onclick="math('div')">/</button> <br />
+    </p>
+  </body>
+</html>

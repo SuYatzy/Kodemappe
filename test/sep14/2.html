@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2</title>
+    <script type="text/javascript">
+
+      let apples = 12;
+      console.log(apples + " apples")
+      let people = 5;
+      console.log(people + " people")
+      let result = 12 % 5;
+      console.log("apples left: " + result)
+
+      window.onload = boot;
+
+      function boot() {
+        document.getElementById("btnCount").onclick = count
+      }
+      var num = 0;
+      function count() {
+        num++;
+        console.log(num);
+        document.getElementById("pCount").innerHTML = num;
+        setTimeout(count, 1);
+      }
+
+    </script>
+  </head>
+  <body>
+    <button type="button" id="btnCount">Klikk</button>
+    <p id="pCount"></p>
+    <a href="index.html">tilbake</a>
+    <a href="3.html">neste</a>
+  </body>
+</html>

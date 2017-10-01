@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>14. september</title>
+    <script type="text/javascript">
+      window.onload = boot;
+
+      function boot() {
+        document.getElementById("btnCalc").onclick = calc
+      }
+      function calc() {
+        var hours = document.getElementById("numHours").value;
+        var pay = document.getElementById("lstPay").value;
+
+        document.getElementById("pPay").innerHTML = hours * pay;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="numHours"> Timer <br />
+    <select id="lstPay">
+      <option value="50">Litt</option>
+      <option value="100">Passe</option>
+      <option value="150">Mye</option>
+    </select> Innsats <br />
+    <button type="button" id="btnCalc"> Beregn Lønn</button>
+    <p id="pPay">
+      wew
+    </p>
+    <a href="2.html">neste</a>
+  </body>
+</html>

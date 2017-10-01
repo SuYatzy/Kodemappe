@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='css/main.css' />
+    <script type='text/javascript' src='script/main.js'> </script>
+    <title>Oblig2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Obligatorisk oppgave 2 Innføring i Programmering</h1>
+    </header>
+    <article>
+
+      <h2>Oppgave 1|2|3</h2>
+      <input type='text' id='inputUsername'> Brukernavn <br />
+      <input type='password' id='inputPass'> Passord <br />
+      <input type='password' id='inputPassRpt'> Gjenta Passord <br />
+      <input type='number' id='inputDate' value='1' class='shota'>
+      <select id='inputMonth'>
+        <option value='0'>Januar</option>
+        <option value='1'>Februar</option>
+        <option value='2'>Mars</option>
+        <option value='3'>April</option>
+        <option value='4'>Mai</option>
+        <option value='5'>Juni</option>
+        <option value='6'>Juli</option>
+        <option value='7'>August</option>
+        <option value='8'>September</option>
+        <option value='9'>Oktober</option>
+        <option value='10'>November</option>
+        <option value='11'>Desember</option>
+      </select>
+      <select id='inputYear'>
+      </select> Fødsel <br />
+      <button type='button' id='btnRegister'> Registrer deg </button>
+      <strong id='registerError'></strong> <br />
+      <p id='regResponse'></p>
+
+      <h2>Oppgave 4</h2>
+      <p id='txtTime'></p>
+
+      <h2>Oppgave 5</h2>
+      <p>
+        Jeg, den mektige trollmannen Sulvur. Jeg den store allseer og mester av tid, kan dessverre ikke ta spådommer for øyeblikket. <br />
+        <em>Men frykt ikke!</em> for jeg har forestilt meg en nettside som kan spå fremtiden, og siden <em>jeg</em> har sett det for meg vil det naturligvis uten videre eksistere.
+      </p>
+      Fyll inn ditt navn <br />
+      <input type='text' id='inName' /><br/>
+      Og oppgi din alder <br />
+      <input type='number' id='inAge' value='18' /> <br />
+      Inkluder høyde på din fysiske kropp i centimeter <br />
+      <input type='number' id='inHeight' value='170'> <br />
+      Ikke glem ditt kjønn <br />
+      <select id='inGender'>
+        <option value='m'>Mann</option>
+        <option value='f'>Dame</option>
+        <option value='u'>Usikker</option>
+      </select> <br />
+      Og for all del ikke glem ditt stjernetegn <br />
+      <select id='inZod'>
+        <option value='aA'>Væren</option>
+        <option value='aT'>Tyren</option>
+        <option value='tA'>Tvillingene</option>
+        <option value='cG'>Krepsen</option>
+        <option value='aC'>Løven</option>
+        <option value='gA'>Jomfruen</option>
+        <option value='gC'>Vekten</option>
+        <option value='aG'>Skorpionen</option>
+        <option value='cT'>Skytten</option>
+        <option value='tC'>Steinbukken</option>
+        <option value='cA'>Vannmannen</option>
+        <option value='cC'>Fiskene</option>
+      </select> <br />
+      <button type='button' id='btnFortune'>Få spådom</button>
+      <p id='outFortune'></p>
+
+      <h2>Oppgave 6</h2>
+      Skriv litt tekst her <br />
+      <input type='text' id='inString'> <br />
+      Hvor mange ganger skal din tekst printes på siden? <br />
+      <input type='number' id='inStringNum' value='1'> <br />
+      <button type='button' id='btnString'>Print</button>
+      <p id='outString'></p>
+
+      <h2>Oppgave 7</h2>
+      <div class='listWrapper'>
+        <p id='lstUp'></p>
+        <p id='lstDown'></p>
+        <p id='lstHalf'></p>
+        <p id='lstDiv3'></p>
+        <p id='lstEven'></p>
+        <p id='lstOdd'></p>
+        <p id='lstPosNeg'></p>
+      </div>
+
+      <h2>Ekstra 1</h2>
+
+      <input type='number' id='inInterestAmount' value='1000' /> Pengebeløp <br />
+      <input type='number' id='inInterestYears' value='50' /> Antall År <br />
+      <input type='number' id='inInterest' value='0.015' /> Rente <br />
+      <button type='button' id='btnCalcInterest'>Kalkuler</button> <br />
+      <textarea id='outInterest' rows='8' cols='80'></textarea>
+
+      <h2>Ekstra 2</h2>
+      <div class='listWrapper'>
+        <p id='comb2'></p>
+        <p id='comb3'></p>
+        <p id='comb4'></p>
+        <p id='comb5'></p>
+      </div>
+
+      <h2>Ekstra 3</h2>
+      <canvas id='canvas' width='400' height='400'></canvas>
+
+      <h2>Ekstra 4</h2>
+      <p>
+        Her kan du lage din helt egen måned. Skreddersydd til dine behov.
+      </p>
+      På hvilken dag skal måneden starte? <br />
+      <select id='inMonthStart'>
+        <option value='0'>Mandag</option>
+        <option value='1'>Tirsdag</option>
+        <option value='2'>Onsdag</option>
+        <option value='3'>Torsdag</option>
+        <option value='4'>Fredag</option>
+        <option value='5'>Lørdag</option>
+        <option value='6'>Søndag</option>
+      </select> <br />
+      Og hvor mange dager skal måneden ha? <br />
+      <input type='number' id='inMonthAmount' value='30'> <br />
+      <button type='button' id='btnCalendar'>Lag en måned</button>
+      <div id='calDays'>
+        <div class='weekday'>Mandag</div>
+        <div class='weekday'>Tirsdag</div>
+        <div class='weekday'>Onsdag</div>
+        <div class='weekday'>Torsdag</div>
+        <div class='weekday'>Fredag</div>
+        <div class='weekday'>Lørdag</div>
+        <div class='weekday'>Søndag</div>
+      </div>
+      <div id='calDates'>
+
+      </div>
+      <hr><a href='http://ask.hiof.no/~martisf/startoppgave/index.php'>Tilbake til hjemmesiden</a>
+    </article>
+  </body>
+</html>

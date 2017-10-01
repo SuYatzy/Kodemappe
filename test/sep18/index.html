@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>18. September</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script type="text/javascript">
+      window.onload = boot
+      function boot() {
+        document.getElementById("btnColor").onclick = response;
+      }
+      var message;
+      function response() {
+        svar = document.getElementById("inputColor").value.toLowerCase()
+        if (svar === "teal") {
+          message = "Helt riktig";
+        } else if (svar === "blå" || svar === "grønn") {
+          message = "Litt Riktig";
+        } else {
+          message = "Helt feil";
+        }
+        document.getElementById("txtResponse").innerHTML = message
+      }
+    </script>
+  </head>
+  <body>
+    <p>Yndlingsfarge?</p>
+    <input type="text" id="inputColor"><button type="button" id="btnColor">Svar</button>
+    <p id="txtResponse"></p>
+  </body>
+</html>

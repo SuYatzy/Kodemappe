@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3</title>
+    <script type="text/javascript">
+      window.onload = boot;
+
+      function boot() {
+        setTimeout(calc);
+      }
+      function calc() {
+        var timeNow = new Date();
+        var timeExam = new Date("12/5/2017 09:00");
+        var difference = timeExam.getTime() - timeNow.getTime();
+
+        var seconds = difference / 1000;
+
+        var hours = Math.floor(seconds / 3600);
+
+        var seconds = seconds - (hours * 3600);
+
+        var minutes = Math.floor(seconds / 60);
+
+        var seconds = Math.floor(seconds - (minutes * 60));
+        document.getElementById("print").innerHTML = "bare " + hours + " timer " + minutes + " minutter og " + seconds + " sekunder igjen til eksamen";
+        setTimeout(calc, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <p id="print"></p>
+    <a href="2.html">tilbake</a>
+  </body>
+</html>

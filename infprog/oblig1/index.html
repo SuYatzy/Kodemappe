@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <script type="text/javascript" src="script/main.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oblig 1</title>
+</head>
+<body>
+  <header>
+    <h1>Obligatorisk Oppgave 1, Innføring i Programmering</h1>
+  </header>
+  <article>
+
+    <h2>Oppgave 1</h2>
+    <button id="btnHello" type="button">Hei</button>
+    <button id="btnGoodbye" type="button">Hade</button>
+    <p id="pGreeting">Hva skal vi snakke om idag?</p>
+
+    <h2>Oppgave 2</h2>
+    <p>
+      Nettsiden min <a href="http://elevweb.skit.no/bilutleie/Index.php">"Speed Stars Bilutleie"</a> fra videregående leier ut mer enn 10 biler hver eneste dag. <br />
+      <button id="btnTrue1" type="button">Sant</button>
+      <button id="btnFalse1" type="button">Usant</button>
+    </p>
+    <p>
+      Jeg har hjemme hos min familie to katter, to fugler, en hund, en hest, en ponni, en hane og utallige høns. <br />
+      <button id="btnTrue2" type="button">Sant</button>
+      <button id="btnFalse2" type="button">Usant</button>
+    </p>
+    <p>
+      Jeg er en ekte trollmann som kan bruke ekte magi <br />
+      <button id="btnTrue3" type="button">Sant</button>
+      <button id="btnFalse3" type="button">Usant</button>
+    </p>
+
+    <h2>Oppgave 3</h2>
+    <p>
+      Sett inn to nummer så vil nettsiden på magisk vis utføre en matematisk operasjon på de. <br />
+      <input id="inptNum1" type="number" />
+      <input id="inptNum2" type="number" /> =
+      <output id="outputMath">0</output> <br />
+      <button onclick="math('add')">+</button>
+      <button onclick="math('sub')">–</button> <br />
+      <button onclick="math('multi')">&#x2022;</button>
+      <button onclick="math('div')">/</button> <br />
+    </p>
+
+    <h2>Oppgave 4</h2>
+    <input type="number" class="longBoy" id="showNum" />  <br />
+    <button type="button" onclick="btnInsertNumber(7)">7</button>
+    <button type="button" onclick="btnInsertNumber(8)">8</button>
+    <button type="button" onclick="btnInsertNumber(9)">9</button> <br />
+    <button type="button" onclick="btnInsertNumber(4)">4</button>
+    <button type="button" onclick="btnInsertNumber(5)">5</button>
+    <button type="button" onclick="btnInsertNumber(6)">6</button> <br />
+    <button type="button" onclick="btnInsertNumber(1)">1</button>
+    <button type="button" onclick="btnInsertNumber(2)">2</button>
+    <button type="button" onclick="btnInsertNumber(3)">3</button> <br />
+    <button type="button" onclick="btnInsertNumber(0)" class="longBoy">0</button>
+
+    <h2>Oppgave 5</h2>
+    <canvas id="canvas" width="400" height="300"></canvas>
+
+    <h2>Oppgave 6</h2>
+    <input type="number" value="1" id="inputItemAmount"> <input type="text" class="longBoy" id="inputItemType" placeholder="Hvilken vare?"> <br />
+
+    <button type="button" onclick="newItem()">Legg til i Handlelisten</button>
+    <h3>Handleliste:</h3>
+    <ul id="itemList"></ul>
+    <p id="txtLineCount">Antall linjer: 0</p>
+    <p id="txtItemCount">Antall varer: 0</p>
+
+    <h2>Ekstra 2</h2>
+    <input type="number" id="inputCanvasX" class="longBoy" value="1000" /> Bredde <br />
+    <input type="number" id="inputCanvasY" class="longBoy" value="300" /> Høyde <br />
+    <button type="button" id="btnCanvasSize" class="longBoy">Endre størrelse</button> <br />
+    <input type="number" id="inputEdges" class="longBoy" value="5"> Antall punkter per form<br />
+    <input type="number" id="inputFps" class="longBoy" value="30"> Bilder i sekundet <br />
+    <button type="button" id="btnSingleShape" class="longBoy">Fade</button> <br />
+    <button type="button" id="btnPause" class="longBoy">Start</button> <br />
+    <canvas id="canvasArt" width="1000" height="300"></canvas>
+
+    <hr><a href="/~martisf/startoppgave/">Tilbake Til Hjemmesiden</a>
+  </article>
+</body>
+</html>
