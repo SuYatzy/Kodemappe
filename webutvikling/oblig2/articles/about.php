@@ -24,14 +24,15 @@
           Jeg tenker best når jeg har en nettside foran meg. Jeg er ikke så glad i å skisse det ut på forhånd. (Med mindre nettsidene blir store og kompliserte selvfølgelig). Men for denne oppgavens skyld tegnet jeg noen ulike forslag.
         </p>
         <img src='../media/wireframe.png' alt='Wireframe 1' id='articleImg'>
-        <p>
+        <figcaption>
           Den første hadde fungert, men jeg ville ha en nettsidet som brukte hele viewporten, så den ble forkastet. <br />
-          Noe av strukturen på siden ble beholdt, som man kan se på hoveddelen. Men måten artiklene legger seg på ble erstattet av css columns.
-        </p>
+          Noe av strukturen på siden ble beholdt, som man kan se på hoveddelen. Men måten artiklene legger seg på ble erstattet av css columns. <br />
+          Jeg hadde også glemt å ta med kalenderen, så det var ikke plass til den her.
+        </figcaption>
         <img src='../media/wireframe2.png' alt='Wireframe 1' id='articleImg'>
-        <p>
+        <figcaption>
           Numer to er den jeg gikk for til slutt. Deretter måtte jeg bestemme meg for et fargeskjema. Den forrige nettsiden jeg lagde var veldig diskret så jeg ville ha noe varmt denne gangen og gikk for en fiery oransje.
-        </p>
+        </figcaption>
         <p>
           Jeg brukte ingen nettsider som inspirasjon, ihvertfall ikke bevisst. Derfor har jeg utelukket å liste opp eksempler på inspirasjon.
         </p>

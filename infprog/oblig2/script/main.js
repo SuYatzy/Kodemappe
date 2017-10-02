@@ -195,14 +195,15 @@ function register(){
 }
 //document.getElementById('inputBirthday').value;
 
-//Oppgave 5
+//Task 5
 function fortune() {
   var name = document.getElementById('inName').value,
       nameLength = name.length,
       age = document.getElementById('inAge').value,
       gender = document.getElementById('inGender').value,
       height = document.getElementById('inHeight').value,
-      fortuneNum;
+      fortuneNum,
+      zod = document.getElementById('inZod').value;
   document.getElementById('outFortune').innerHTML = "";
   if (gender === "u") {
     var rndGender = Math.random();
@@ -230,10 +231,10 @@ function fortune() {
 
         if (fortuneNum % 2 === 0) {
           document.getElementById('outFortune').innerHTML +=
-            "Gratulerer " + name + ". Lykken står deg bi. Du vil ha den mest fullkomne lykke. <br /> Det er bare ett lite problem. Ingenting merkverdig, men å lese spådommer er ikke helt uten strev. Hvis du bare kunne, mmm, sendt litt penger min vei. Selvfølgelig, <em>jeg er en mektig trollmann</em>. Så dine penger er trygge i mine lommer. Her er min menneskelige bankkonto for din beleilighet: 1234.12.12345. Du står selvfølgelig fritt om du vil betale meg 100 kroner eller ikke, men jeg har nemlig evnen til å reversere denne spådommen, hvis du forstår hva det innebærer."
+            "Gratulerer " + name + ". Stjernene har talt til meg. Lykken vil stå deg bi barn av " + zod + "  . Du vil ha den mest fullkomne lykke. <br /> Det er bare ett lite problem. Ingenting merkverdig, men å lese spådommer er ikke helt uten strev. Hvis du bare kunne, mmm, sendt litt penger min vei. Selvfølgelig, <em>jeg er en mektig trollmann</em>. Så dine penger er trygge i mine lommer. Her er min menneskelige bankkonto for din beleilighet: 1234.12.12345. Du står selvfølgelig fritt om du vil betale meg 100 kroner eller ikke, men jeg har nemlig evnen til å reversere denne spådommen, hvis du forstår hva det innebærer."
         } else if (fortuneNum % 2 !== 0) {
           document.getElementById('outFortune').innerHTML +=
-            "Vent! Nei og nei. Det mest grusomme har skjedd! Jeg tror ikke jeg har sett noe lignende før. Jeg skal spare deg for detaljene men hvis du holder ditt eget liv kjært anbefaler jeg for ditt eget beste at du kjøper denne magiske stenen av meg. Den vil beskytte deg mot alskens fare du skulle komme over. Hvis du sender meg 100 kroner på min jordlige bankkonto: 1234.12.12345. Skal jeg tenke frem en sten, og jeg lover at det vil ende godt for deg."
+            "Vent! Nei og nei. Det mest grusomme har skjedd! Stjernene er ikke plassert i din favør idag kjære barn av " + zod +" .Jeg tror ikke jeg har sett noe lignende før. Jeg skal spare deg for detaljene men hvis du holder ditt eget liv kjært anbefaler jeg for ditt eget beste at du kjøper denne magiske stenen av meg. Den vil beskytte deg mot alskens fare du skulle komme over. Hvis du sender meg 100 kroner på min jordlige bankkonto: 1234.12.12345. Skal jeg tenke frem en sten, og jeg lover at det vil ende godt for deg."
         }
     }
     i++;

@@ -29,6 +29,7 @@ header {
   background-color: rgba(0,0,0,0.7);
   color: white;
   padding: 1em;
+  padding-left: 3em;
   line-height: 100px
 }
 nav {
@@ -137,6 +138,23 @@ footer {
     margin: 1em;
     float: left;
   }
+  .articleFull figcaption {
+    margin: 1em auto;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 80%;
+    overflow: hidden;
+  }
+  .articleFull a {
+    color: #ff503d; //red
+  }
+  .articleFull a:visited {
+    color: #ff8a3d; //orange
+  }
+  .articleFull a:hover {
+    text-decoration: none;
+  }
 
 .articlePreview {
   width: 100%;
@@ -185,6 +203,12 @@ footer {
   grid-area: coolImage;
   background: url('../media/wizard.gif') no-repeat 50% 50%;
   background-size: contain;
+}
+
+#extLinks li::after{
+  font-family: 'FontAwesome';
+  content: ' \f08e';
+  font-size: 10px;
 }
 
 @media screen and (max-device-width: 800px) {

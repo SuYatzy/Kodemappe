@@ -50,6 +50,12 @@
       <span>
         <h3>Nyheter:</h3>
         <p>
+          Trollmann lagt til
+        </p>
+        <p>
+          SVG side skrevet
+        </p>
+        <p>
           Trollmann fjernet
         </p>
         <p>
@@ -67,7 +73,6 @@
         <strong>Webutvikling</strong> 4. Oktober <br />
         <strong>Infprog</strong> 4.Oktober
       </span>
-
     </aside>
     <main class='previewWrapper'>
       <article class='articlePreview'>
@@ -111,6 +116,15 @@
           <h2>Mer Filler</h2>
           <p>
             Hjelp, jeg vet ikke hva som skal være her
+            <span><i class='fa fa-chevron-down'></i></span>
+          </p>
+        </a>
+      </article>
+      <article class='articlePreview'>
+        <a href='#'>
+          <h2>Kul trollmann</h2>
+          <p>
+            <img src='media/wizard.gif' alt='Infinity Wizard'>
             <span><i class='fa fa-chevron-down'></i></span>
           </p>
         </a>
