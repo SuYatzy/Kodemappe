@@ -135,6 +135,6 @@
         </p>
       </article>
     </main>
-    <footer></footer>
+    <footer><?php include("../include/footer.html") ?></footer>
   </body>
 </html>

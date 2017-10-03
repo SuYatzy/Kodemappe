@@ -50,19 +50,16 @@
       <span>
         <h3>Nyheter:</h3>
         <p>
-          Trollmann lagt til
+          MathML-artikkel ute
         </p>
         <p>
-          SVG side skrevet
+          GitHub-artikkel ute
         </p>
         <p>
-          Trollmann fjernet
+          SVG-artikkel ute
         </p>
         <p>
-          Nettsiden liger ute til nedlasting på GitHub???
-        </p>
-        <p>
-          Trollmann lagt til
+          Alle mine prosjekter er nå tilgjengelige på GitHub
         </p>
         <p>
           Nettsiden ble laget
@@ -70,8 +67,8 @@
       </span>
       <span>
         <h3>Innleveringer:</h3>
-        <strong>Webutvikling</strong> 4. Oktober <br />
-        <strong>Infprog</strong> 4.Oktober
+        <i class="fa fa-square-o"></i><strong>Webutvikling</strong> 4. Oktober<br />
+        <i class="fa fa-check-square-o"></i><strong>Infprog</strong> 4.Oktober
       </span>
     </aside>
     <main class='previewWrapper'>
@@ -79,8 +76,8 @@
         <a href='articles/mathml.php'>
           <h2>MathML</h2>
           <p>
-            MathML er et blalblsrbksof
-            <span><i class='fa fa-chevron-down'></i></span>
+            MathML er et markup språk som kan brukes på nettsider. Det lar deg skrive inn matematiske formler
+            <i class='fa fa-chevron-down'></i>
           </p>
         </a>
       </article>
@@ -89,7 +86,7 @@
           <h2>SVG</h2>
           <p>
             SVG er vektorgrafikk som støttes av alle moderne nettlesere. Det tar lite plass og kan manipuleres med CSS.
-            <span><i class='fa fa-chevron-down'></i></span>
+            <i class='fa fa-chevron-down'></i>
           </p>
         </a>
       </article>
@@ -97,25 +94,39 @@
         <a href='articles/git.php'>
           <h2>GitHub</h2>
           <p>
-
-            <span><i class='fa fa-chevron-down'></i></span>
+            GitHub er en tjeneste som lar deg lagre prosjektene dine online, slike at man får publisity.
+            <i class='fa fa-chevron-down'></i>
           </p>
         </a>
       </article>
       <article class='articlePreview'>
-        <a href='#'>
-          <h2>Kul trollmann</h2>
+        <a href='http://ask.hiof.no/~martisf/infprog/oblig2/'>
+          <h2>Infprog Oblig 2</h2>
           <p>
-            <img src='media/wizard.gif' alt='Infinity Wizard'>
-            <span><i class='fa fa-chevron-down'></i></span>
+            Obligatorisk oppgave 2 i innføring i programmering er ferdig. Denne gangen med alle ekstraoppgavene også.
+            <i class='fa fa-chevron-down'></i>
+          </p>
+        </a>
+      </article>
+      <article class='articlePreview'>
+        <a href='http://ask.hiof.no/~martisf/infprog/oblig1/'>
+          <h2>Infprog Oblig 1</h2>
+          <p>
+            Obligatorisk oppgave 1 i innføring i programmering er ferdig.
+            <i class='fa fa-chevron-down'></i>
+          </p>
+        </a>
+      </article>
+      <article class='articlePreview'>
+        <a href='http://ask.hiof.no/~martisf/webutvikling/oblig1/oppgave1.html'>
+          <h2>Webutvikling Oblig 1</h2>
+          <p>
+            Obligatorisk oppgave 1 i webutvikling er ferdig. Her er det litt informasjon om webservere, FTP og domener. Altså grunnleggende shit man burde kunne som webutviklere.
+            <i class='fa fa-chevron-down'></i>
           </p>
         </a>
       </article>
     </main>
-    <footer>
-      <?php
-        include("include/footer.html")
-       ?>
-    </footer>
+    <footer><?php include("include/footer.html") ?></footer>
   </body>
 </html>

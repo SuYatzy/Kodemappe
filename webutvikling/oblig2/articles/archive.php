@@ -29,6 +29,8 @@
           <li><a target='_blank' href='https://css-tricks.com/snippets/css/complete-guide-grid/'>https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
           GitHub:
           <li><a target='_blank' href='https://www.thebalance.com/what-is-github-and-why-should-i-use-it-2071946'>https://www.thebalance.com/what-is-github-and-why-should-i-use-it-2071946</a></li>
+          MathML:
+          <li><a href='https://www.javatpoint.com/what-is-mathml'>https://www.javatpoint.com/what-is-mathml</a></li>
           SVG:
           <li><a target='_blank' href='https://stackoverflow.com/questions/8286550/transparent-hollow-or-cut-out-circle'>https://stackoverflow.com/questions/8286550/transparent-hollow-or-cut-out-circle</a></li>
           <li><a target='_blank' href='https://css-tricks.com/clipping-masking-css/'>https://css-tricks.com/clipping-masking-css/</a></li>
@@ -37,6 +39,6 @@
         </ul>
       </article>
     </main>
-    <footer></footer>
+    <footer><?php include("../include/footer.html") ?></footer>
   </body>
 </html>
