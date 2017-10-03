@@ -25,6 +25,11 @@
         <p>
           GitHub er praktisk når flere personer samarbeider på et prosjekt. Man har alltid en backup av tidligere versjoner og hver oppdatering gjort av en bruker må beskrives i en changelog. Det gjør at det blir lettere og mer oversiktlig å håndtere prosjekter.
         </p>
+        <img src='../media/git1.png' alt='GitHub'>
+        <img src='../media/git2.png' alt='GitHub'>
+        <figcaption>
+          Her er jeg koblet opp mot mitt repository på GitHub
+        </figcaption>
       </article>
     </main>
     <footer><?php include("../include/footer.html") ?></footer>
