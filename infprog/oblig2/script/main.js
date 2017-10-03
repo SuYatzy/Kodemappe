@@ -1,5 +1,4 @@
 window.onload = boot;
-
 function boot(){
   //Task 1 2 3
   document.getElementById('btnRegister').onclick = register;
@@ -7,7 +6,7 @@ function boot(){
   var currentYear = time.getFullYear(),
       optionYear = '';
   //Create option elements for the last 70 years
-  for (i=70;i>0;i--) {
+  for (i=70; i>0; i--) {
     optionYear += "<option value='" + currentYear + "'>" + currentYear + "</option>";
     currentYear--;
   }
@@ -64,7 +63,7 @@ function boot(){
       lstNum = 0 - lstNum;
     } else if (lstNum < 0) {
       document.getElementById('lstPosNeg').innerHTML += lstNum + "<br />";
-      lstNum = 0 -lstNum;
+      lstNum = 0 - lstNum;
       lstNum++;
     } else {
       document.getElementById('lstPosNeg').innerHTML += lstNum + "<br />";
@@ -164,7 +163,6 @@ function register(){
         shortPass = 'Passordet er for kort',
         passMismatch = 'Passordene er ulike',
         tooYoung = 'Du må være minst 18 år',
-
         success = 'Gratulerer ' + username + ', du er inne.';
 
   document.getElementById('registerError').style.visibility = 'visible';
@@ -181,19 +179,16 @@ function register(){
   } else if (pass != passRpt) {
     document.getElementById('registerError').innerHTML = passMismatch;
     document.getElementById('inputPassRpt').focus();
-  } else if ((currentYear - birthYear) < 18) {
+  /*} else if ((currentYear - birthYear) < 18) {
     document.getElementById('registerError').innerHTML = tooYoung;
-    document.getElementById('inputYear').focus();
-  } else if ( ( (currentYear - birthYear) === 18) && ( (currentMonth - birthMonth) >= 0) && ((currentDate - birthDate) >= 1) ) {
+    document.getElementById('inputYear').focus();*/
+  } else if ( ( (currentYear - birthYear) <= 18) && ( (currentMonth - birthMonth) >= 0) && ((birthDate - currentDate) <= 1) ) {
       document.getElementById('registerError').innerHTML = tooYoung;
   } else {
     document.getElementById('registerError').style.visibility = 'hidden';
     document.getElementById('regResponse').innerHTML = success;
   }
-
-
 }
-//document.getElementById('inputBirthday').value;
 
 //Task 5
 function fortune() {
@@ -202,9 +197,8 @@ function fortune() {
       age = document.getElementById('inAge').value,
       gender = document.getElementById('inGender').value,
       height = document.getElementById('inHeight').value,
-      fortuneNum,
-      zod = document.getElementById('inZod').value;
-  document.getElementById('outFortune').innerHTML = "";
+      zod = document.getElementById('inZod').value,
+      fortuneNum;
   if (gender === "u") {
     var rndGender = Math.random();
     if (rndGender < 0.5) {
@@ -218,17 +212,16 @@ function fortune() {
   } else if (gender === "f") {
     fortuneNum = age * height - 3
   }
+  document.getElementById('outFortune').innerHTML = "";
   document.getElementById('outFortune').innerHTML += "hmmmmm…<br />"
   i = 0;
   setTimeout(aaa, 1500);
-
   function aaa() {
     if (i < 5) {
       document.getElementById('outFortune').innerHTML += "AAAAAAA<br />"
     } else if (i === 5) {
       document.getElementById('outFortune').innerHTML += "EUREKA<br />"
     } else if (i > 5) {
-
         if (fortuneNum % 2 === 0) {
           document.getElementById('outFortune').innerHTML +=
             "Gratulerer " + name + ". Stjernene har talt til meg. Lykken vil stå deg bi barn av " + zod + "  . Du vil ha den mest fullkomne lykke. <br /> Det er bare ett lite problem. Ingenting merkverdig, men å lese spådommer er ikke helt uten strev. Hvis du bare kunne, mmm, sendt litt penger min vei. Selvfølgelig, <em>jeg er en mektig trollmann</em>. Så dine penger er trygge i mine lommer. Her er min menneskelige bankkonto for din beleilighet: 1234.12.12345. Du står selvfølgelig fritt om du vil betale meg 100 kroner eller ikke, men jeg har nemlig evnen til å reversere denne spådommen, hvis du forstår hva det innebærer."
@@ -249,8 +242,7 @@ function string() {
   var str = document.getElementById('inString').value,
       strNum = parseInt(Math.round(document.getElementById('inStringNum').value));
 
-  console.log(strNum);
-  for (i = 0; i < strNum; i++) {
+  for (i = 0; i < strNum; i++) { //Bruker ikke += fordi jeg vil ha ny tekst øverst
     document.getElementById('outString').innerHTML = str + "<br />" + document.getElementById('outString').innerHTML;
   }
 }

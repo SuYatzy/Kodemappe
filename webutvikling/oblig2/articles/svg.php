@@ -19,9 +19,9 @@
       <article class='articleFull'>
         <h2>Scaleable Vector Graphics</h2>
         <p>
-          SVG kan konstrueres i HTML og manipuleres i CSS hvis man ønsker det. Det kan også importeres i en img tag.<br />
+          SVG kan konstrueres i HTML og manipuleres i CSS. Det tar mindre plass enn bildefiler og er ikke avhengig av oppløsning. Konstruering av vektorgrafikk kan være mer tidkrevende enn å tegne et bilde, men i gjengjeld tilbyr det fleksibilitet og praktikalitet<br />
+          SVG fungerer veldig bra til å lage ikoner og annen grafikk, som månen jeg har brukt i de neste eksemplene.
         </p>
-
 
         <svg id='moon' class='lone' viewBox='0 0 12 12'>
           <defs>

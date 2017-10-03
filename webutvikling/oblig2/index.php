@@ -20,7 +20,7 @@
       <span>
         <h3>Mandag</h3>
         <strong>Øvingstimer</strong> 08:00 - 12:00 <br />
-        <strong>Infprog</strong> 12:15 -  14:00<br />
+        <strong>Støttetimer</strong> 12:15 -  14:00<br />
         <strong>Webutvikling</strong> 14:15 -  16:00<br />
       </span>
       <span>
@@ -37,7 +37,7 @@
       <span>
         <h3>Torsdag</h3>
         <strong>Øvingstimer</strong> 08:15 - 10:00 <br />
-        <strong>Infprog</strong> 10:15 - 12:00 <br />
+        <strong>Støttetimer</strong> 10:15 - 12:00 <br />
         <strong>Øvingstimer</strong> 12:15 - 14:00 <br />
       </span>
       <span>
@@ -98,24 +98,6 @@
           <h2>GitHub</h2>
           <p>
 
-            <span><i class='fa fa-chevron-down'></i></span>
-          </p>
-        </a>
-      </article>
-      <article class='articlePreview'>
-        <a href='#'>
-          <h2>Fukn artikkel om shit</h2>
-          <p>
-            Sånn faktisk hva skal være her?
-            <span><i class='fa fa-chevron-down'></i></span>
-          </p>
-        </a>
-      </article>
-      <article class='articlePreview'>
-        <a href='#'>
-          <h2>Mer Filler</h2>
-          <p>
-            Hjelp, jeg vet ikke hva som skal være her
             <span><i class='fa fa-chevron-down'></i></span>
           </p>
         </a>
